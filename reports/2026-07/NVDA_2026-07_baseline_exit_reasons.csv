@@ -1,0 +1,4 @@
+exit_reason,trade_count,win_rate,expectancy,profit_factor,total_net_pnl
+take_profit,149,0.0,-0.3838138393784738,0.0,-57.1882620673926
+stop_loss,284,0.0,-3.523896044776243,0.0,-1000.786476716453
+max_holding,129,0.0,-2.1106908201713512,0.0,-272.2791158021043

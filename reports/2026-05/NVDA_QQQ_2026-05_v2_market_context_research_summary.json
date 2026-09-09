@@ -1,0 +1,85 @@
+{
+  "candidate_screen": {
+    "expectancy_must_exceed": 0,
+    "minimum_trades": 30,
+    "profit_factor_must_exceed": 1,
+    "qualifying_regimes": []
+  },
+  "feature": {
+    "definition": "close[t] / close[t-5] - 1 within each session",
+    "name": "qqq_return_5m",
+    "regime_threshold": 0.001,
+    "regimes": {
+      "falling": "\u2264 -0.10%",
+      "rising": "\u2265 +0.10%",
+      "stable": "> -0.10% and < +0.10%"
+    }
+  },
+  "feed": "sip",
+  "market_context_symbol": "QQQ",
+  "nvda_dataset_path": "data\\raw\\alpaca\\sip\\NVDA\\NVDA_2026-05-01_2026-05-31_1min.parquet",
+  "nvda_dataset_sha256": "fb700deb65e3370970455b93147c2714a8e211a2e1fdb529243768f5e7cb0f8a",
+  "parameters": {
+    "broker_profile": "alpaca_personal_api",
+    "capital_per_trade": 1000.0,
+    "commission_per_order": 0.0,
+    "drop_threshold": 0.002,
+    "lookback_minutes": 5,
+    "max_holding_bars": 5,
+    "slippage_bps": 1.0,
+    "spread_bps": 2.0,
+    "stop_loss": 0.0015,
+    "take_profit": 0.002
+  },
+  "primary_symbol": "NVDA",
+  "qqq_dataset_path": "data\\raw\\alpaca\\sip\\QQQ\\QQQ_2026-05-01_2026-05-31_1min.parquet",
+  "qqq_dataset_sha256": "15bd449a3be8ff80658c9714f7861171b34cdebdb7cb1f7ef5c4a1b595fd0aae",
+  "regimes": [
+    {
+      "average_loss": -1.4523403189469333,
+      "average_win": 1.383207575009638,
+      "eligible_timestamp_count": 757,
+      "expectancy": -0.45832906460791395,
+      "max_drawdown": 125.97162717765059,
+      "max_drawdown_pct": 0.01259494040266323,
+      "profit_factor": 0.5140790456665194,
+      "qqq_regime": "falling",
+      "range": "\u2264 -0.10%",
+      "total_net_pnl": -124.20717650874468,
+      "trade_count": 271,
+      "win_rate": 0.3505535055350554
+    },
+    {
+      "average_loss": -1.374492525023311,
+      "average_win": 1.225490126512695,
+      "eligible_timestamp_count": 6014,
+      "expectancy": -0.4276331713296014,
+      "max_drawdown": 144.67464823724913,
+      "max_drawdown_pct": 0.014465414299401277,
+      "profit_factor": 0.51067860279271,
+      "qqq_regime": "stable",
+      "range": "> -0.10% and < +0.10%",
+      "total_net_pnl": -143.25711239541647,
+      "trade_count": 335,
+      "win_rate": 0.3641791044776119
+    },
+    {
+      "average_loss": -1.5455745221676154,
+      "average_win": 1.563765401382503,
+      "eligible_timestamp_count": 849,
+      "expectancy": -0.5091278809842427,
+      "max_drawdown": 9.304352818244297,
+      "max_drawdown_pct": 0.0009304352818244296,
+      "profit_factor": 0.5058848276009932,
+      "qqq_regime": "rising",
+      "range": "\u2265 +0.10%",
+      "total_net_pnl": -9.164301857716367,
+      "trade_count": 18,
+      "win_rate": 0.3333333333333333
+    }
+  ],
+  "research_version": 1,
+  "rows": 7720,
+  "sessions": 20,
+  "status": "DESCRIPTIVE_RESEARCH_NOT_VALIDATION"
+}

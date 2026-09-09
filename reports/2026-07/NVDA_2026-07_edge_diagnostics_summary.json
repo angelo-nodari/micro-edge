@@ -1,0 +1,51 @@
+{
+  "alpaca_cost_decomposition": {
+    "broker_commission": 0.0,
+    "gross_pnl_on_alpaca_trade_path": -4.8481362447387255,
+    "net_pnl": -224.8838545859499,
+    "regulatory_fees": 18.63,
+    "slippage_cost": 100.70285919484667,
+    "spread_cost": 100.70285914636449
+  },
+  "alpaca_metrics": {
+    "average_loss": -1.347759362816342,
+    "average_win": 1.301777489506217,
+    "expectancy": -0.40014920744830945,
+    "max_drawdown": 228.31866609356257,
+    "max_drawdown_pct": 0.022824026986301992,
+    "profit_factor": 0.5377906599659529,
+    "total_net_pnl": -224.8838545859499,
+    "trade_count": 562,
+    "win_rate": 0.35765124555160144
+  },
+  "alpaca_regime_thresholds": {
+    "low_upper_bps": 8.68276241023262,
+    "normal_upper_bps": 13.727347968793827
+  },
+  "costless_metrics": {
+    "average_loss": -1.1617024806506464,
+    "average_win": 1.4518968834008104,
+    "expectancy": 0.0359951871057726,
+    "max_drawdown": 26.836781599995447,
+    "max_drawdown_pct": 0.002672485148808894,
+    "profit_factor": 1.0571946533866432,
+    "total_net_pnl": 19.40140585001143,
+    "trade_count": 539,
+    "win_rate": 0.4582560296846011
+  },
+  "costless_regime_thresholds": {
+    "low_upper_bps": 8.784385253628873,
+    "normal_upper_bps": 13.886770505453455
+  },
+  "dataset_path": "data/raw/alpaca/sip/NVDA/NVDA_2026-07-01_2026-07-31_1min.parquet",
+  "diagnostic_version": 1,
+  "rows": 8492,
+  "sessions": 22,
+  "volatility_method": {
+    "min_periods": 5,
+    "regimes": "descriptive monthly terciles",
+    "return_frequency": "1Min",
+    "rolling_window": 30,
+    "units": "basis_points"
+  }
+}

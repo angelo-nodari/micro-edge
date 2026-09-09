@@ -1,0 +1,33 @@
+{
+  "dataset_path": "data/raw/alpaca/sip/NVDA/NVDA_2026-07-01_2026-07-31_1min.parquet",
+  "feed": "sip",
+  "first_timestamp": "2026-07-01T09:30:00-04:00",
+  "last_timestamp": "2026-07-31T15:55:00-04:00",
+  "metrics": {
+    "average_loss": -1.347759362816342,
+    "average_win": 1.301777489506217,
+    "expectancy": -0.40014920744830945,
+    "max_drawdown": 228.31866609356257,
+    "max_drawdown_pct": 0.022824026986301992,
+    "profit_factor": 0.5377906599659529,
+    "total_net_pnl": -224.8838545859499,
+    "trade_count": 562,
+    "win_rate": 0.35765124555160144
+  },
+  "parameters": {
+    "broker_profile": "alpaca_personal_api",
+    "capital_per_trade": 1000.0,
+    "commission_per_order": 0.0,
+    "drop_threshold": 0.002,
+    "lookback_minutes": 5,
+    "max_holding_bars": 5,
+    "slippage_bps": 1.0,
+    "spread_bps": 2.0,
+    "stop_loss": 0.0015,
+    "take_profit": 0.002
+  },
+  "report_version": 1,
+  "rows": 8492,
+  "sessions": 22,
+  "symbol": "NVDA"
+}

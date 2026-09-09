@@ -1,0 +1,98 @@
+{
+  "bands": [
+    {
+      "average_loss": -1.4753048320119666,
+      "average_win": 1.2590058109483848,
+      "eligible_timestamp_count": 1804,
+      "expectancy": -0.5978767898679734,
+      "max_drawdown": 81.6278481016343,
+      "max_drawdown_pct": 0.00816278481016343,
+      "profit_factor": 0.40324875296010393,
+      "range": "< 0.75",
+      "relative_volume_band": "low",
+      "total_net_pnl": -80.11548984230843,
+      "trade_count": 134,
+      "win_rate": 0.3208955223880597
+    },
+    {
+      "average_loss": -1.353863856029522,
+      "average_win": 1.2907617179684576,
+      "eligible_timestamp_count": 3913,
+      "expectancy": -0.3166005320961827,
+      "max_drawdown": 109.45878625355908,
+      "max_drawdown_pct": 0.010945878625355909,
+      "profit_factor": 0.6152425167915305,
+      "range": "0.75\u2013<1.25",
+      "relative_volume_band": "normal",
+      "total_net_pnl": -105.74457772012502,
+      "trade_count": 334,
+      "win_rate": 0.39221556886227543
+    },
+    {
+      "average_loss": -1.4167616675007682,
+      "average_win": 1.2434809383231435,
+      "eligible_timestamp_count": 1421,
+      "expectancy": -0.4455619860094988,
+      "max_drawdown": 84.2112153557955,
+      "max_drawdown_pct": 0.00842112153557955,
+      "profit_factor": 0.5046731260008627,
+      "range": "1.25\u2013<2.00",
+      "relative_volume_band": "high",
+      "total_net_pnl": -84.21121535579528,
+      "trade_count": 189,
+      "win_rate": 0.36507936507936506
+    },
+    {
+      "average_loss": -1.3650234611983636,
+      "average_win": 1.2464272802326395,
+      "eligible_timestamp_count": 382,
+      "expectancy": -0.2266987790361315,
+      "max_drawdown": 17.682504764818077,
+      "max_drawdown_pct": 0.0017682504764818076,
+      "profit_factor": 0.7055910614616725,
+      "range": "\u2265 2.00",
+      "relative_volume_band": "very_high",
+      "total_net_pnl": -17.68250476481826,
+      "trade_count": 78,
+      "win_rate": 0.4358974358974359
+    }
+  ],
+  "candidate_screen": {
+    "expectancy_must_exceed": 0,
+    "minimum_trades": 30,
+    "profit_factor_must_exceed": 1,
+    "qualifying_bands": []
+  },
+  "dataset_path": "data\\raw\\alpaca\\sip\\NVDA\\NVDA_2026-05-01_2026-05-31_1min.parquet",
+  "dataset_sha256": "fb700deb65e3370970455b93147c2714a8e211a2e1fdb529243768f5e7cb0f8a",
+  "feature": {
+    "bands": {
+      "high": "1.25\u2013<2.00",
+      "low": "< 0.75",
+      "normal": "0.75\u2013<1.25",
+      "very_high": "\u2265 2.00"
+    },
+    "current_bar_excluded_from_denominator": true,
+    "denominator": "median of prior 30 within-session bars",
+    "min_periods": 10,
+    "name": "relative_volume_30"
+  },
+  "feed": "sip",
+  "parameters": {
+    "broker_profile": "alpaca_personal_api",
+    "capital_per_trade": 1000.0,
+    "commission_per_order": 0.0,
+    "drop_threshold": 0.002,
+    "lookback_minutes": 5,
+    "max_holding_bars": 5,
+    "slippage_bps": 1.0,
+    "spread_bps": 2.0,
+    "stop_loss": 0.0015,
+    "take_profit": 0.002
+  },
+  "research_version": 1,
+  "rows": 7720,
+  "sessions": 20,
+  "status": "DESCRIPTIVE_RESEARCH_NOT_VALIDATION",
+  "symbol": "NVDA"
+}

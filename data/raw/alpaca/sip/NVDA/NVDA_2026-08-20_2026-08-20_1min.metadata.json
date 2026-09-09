@@ -1,0 +1,25 @@
+{
+  "adjustment": "all",
+  "downloaded_at_utc": "2026-08-27T09:23:21.256835+00:00",
+  "feed": "sip",
+  "first_timestamp": "2026-08-20T09:30:00-04:00",
+  "last_timestamp": "2026-08-20T15:55:00-04:00",
+  "parquet_sha256": "77b62c8609970be3a044aa75b88c5dfdf99f30b3e8860714143aaed031d67e1b",
+  "quality": {
+    "duplicate_timestamps": 0,
+    "incomplete_full_sessions": [],
+    "invalid_ohlcv_rows": 0,
+    "missing_values": 0,
+    "session_bar_counts": {
+      "2026-08-20": 386
+    }
+  },
+  "requested_end": "2026-08-20",
+  "requested_start": "2026-08-20",
+  "rows": 386,
+  "schema_version": 1,
+  "sessions": 1,
+  "source": "alpaca",
+  "symbol": "NVDA",
+  "timeframe": "1Min"
+}

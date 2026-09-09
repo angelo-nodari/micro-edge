@@ -1,0 +1,51 @@
+{
+  "candidate": "V1",
+  "confidence_interval_status": "NOT_YET_CALCULATED_STEP_4",
+  "dataset_path": "data\\raw\\alpaca\\sip\\NVDA\\NVDA_2026-06-01_2026-06-30_1min.parquet",
+  "dataset_sha256": "89c9d23cba623dd55ed91d871f3fe99579f9c8df94ff3516ec0b627442da414f",
+  "decision": "REJECT",
+  "eligibility": {
+    "eligible_signal_timestamp_count": 903,
+    "entry_hours": [
+      11,
+      12
+    ],
+    "volatility_low_upper_bps_exclusive": 8.68276241023262,
+    "volatility_min_periods": 5,
+    "volatility_normal_upper_bps_inclusive": 13.727347968793827,
+    "volatility_window": 30
+  },
+  "feed": "sip",
+  "first_timestamp": "2026-06-01T09:30:00-04:00",
+  "hypothesis_path": "candidate_hypothesis_v1.md",
+  "hypothesis_sha256": "9fff8f6936d732a5dead49c761339d2d3bb938a1e51dc4ceb09a037fc80275be",
+  "last_timestamp": "2026-06-30T15:55:00-04:00",
+  "metrics": {
+    "average_loss": -1.3932671218488357,
+    "average_win": 1.2497932102559157,
+    "expectancy": -0.336042989006935,
+    "max_drawdown": 20.403317378611973,
+    "max_drawdown_pct": 0.002040326336839317,
+    "profit_factor": 0.5980155997640361,
+    "total_net_pnl": -20.1625793404161,
+    "trade_count": 60,
+    "win_rate": 0.4
+  },
+  "parameters": {
+    "broker_profile": "alpaca_personal_api",
+    "capital_per_trade": 1000.0,
+    "commission_per_order": 0.0,
+    "drop_threshold": 0.002,
+    "lookback_minutes": 5,
+    "max_holding_bars": 5,
+    "slippage_bps": 1.0,
+    "spread_bps": 2.0,
+    "stop_loss": 0.0015,
+    "take_profit": 0.002
+  },
+  "rows": 8106,
+  "sessions": 21,
+  "status": "FROZEN_HOLDOUT_EVALUATED_ONCE",
+  "symbol": "NVDA",
+  "validation_version": 1
+}
